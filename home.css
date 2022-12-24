@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font: bold;
+}
+
+.mephoto{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; 
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+
+}
+
+hr{
+    height: 1px;
+}
+
+#gameLinks{
+    display:  flex;
+    flex-direction: column;
+    
+}
