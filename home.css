@@ -25,7 +25,12 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+    
 
+}
+
+.redes a{
+    margin: 15px;
 }
 
 hr{
