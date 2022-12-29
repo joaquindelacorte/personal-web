@@ -42,3 +42,9 @@ hr{
     flex-direction: column;
     
 }
+
+#tools{
+    display:  flex;
+    flex-direction: column;
+    
+}
