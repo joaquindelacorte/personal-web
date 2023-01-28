@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic</title>
+    <script>
+        const apiKey = '669bfe63-88e0-472b-82a1-01eeaf2efa44';
+        const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?symbol=BTC&convert=USD&CMC_PRO_API_KEY=${apiKey}`;
+      
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            const bitcoinPrice = data.data[0].quote.USD.price;
+            document.getElementById('bitcoin-price').innerHTML = bitcoinPrice;
+          })
+          .catch(error => console.error(error));
+      </script>
+</head>
+<body>
+    <div id="bitcoin-price"></div>
+    
+</body>
+</html>
